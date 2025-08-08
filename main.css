@@ -1,0 +1,113 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+    background: rgb(211, 211, 211);
+    font-family:'Open Sans', sans-serif;
+}
+
+body {
+
+width: 100%;
+min-height: 100vh;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+img {
+    width: 380px; 
+    height: auto;
+    border: 3px solid darkgoldenrod;
+    border-radius: 15px;
+ }
+
+ header {
+  justify-content: center;
+  text-align: center; 
+  font-size: xx-large;
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  min-height: 75px;
+  background: rgb(220, 220, 220);
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 5px;
+}
+
+h1 {
+  color: rgba(50, 50, 50, 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 200%;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-shadow: 0em 0.25em 0.05em rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.05em;
+  display: run-in;
+  position: relative;
+}
+
+
+.button {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+  padding: 14px 25px;
+  border-radius: 16px;
+  font-size: 1.25em;
+  cursor: pointer;
+  border: none;
+  font-family: monospace;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272727;
+  border-radius: 14px;
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  opacity: 0.7;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+  border-radius: 9px;
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(20px);
+}
+
+.button:hover:after {
+  opacity: 1;
+}
+
+
+    
+
+
+
+
+
+
+
+
